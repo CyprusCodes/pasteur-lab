@@ -93,10 +93,10 @@ export function Header() {
           : "bg-gradient-to-b from-black/20 to-transparent backdrop-blur-sm py-5"
       )}
     >
-      <div className="container-wide">
-        <div className="flex items-center justify-between">
+      <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16">
+        <div className="flex items-center justify-between gap-8">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
+          <Link to="/" className="flex items-center gap-3 group flex-shrink-0">
             <img
               src={getImagePath(isScrolled ? "/logo.png" : "/logo-white.png")}
               alt="Pasteur Lab Laboratuvarı"
@@ -110,7 +110,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-4 xl:gap-6 2xl:gap-8 flex-1 justify-center max-w-4xl">
             {navigationItems.map((item) => (
               <div
                 key={item.label}
@@ -123,7 +123,7 @@ export function Header() {
                 <Link
                   to={item.href}
                   className={cn(
-                    "text-sm font-medium transition-colors relative py-2 px-1",
+                    "text-sm font-medium transition-colors relative py-2 px-2 flex items-center whitespace-nowrap",
                     isScrolled
                       ? "text-foreground hover:text-primary"
                       : "text-white/90 hover:text-white"
@@ -132,23 +132,23 @@ export function Header() {
                   {item.label}
                   <span
                     className={cn(
-                      "absolute bottom-0 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full",
+                      "absolute bottom-0 left-2 right-2 h-0.5 transition-all duration-300 scale-x-0 group-hover:scale-x-100",
                       isScrolled ? "bg-primary" : "bg-white"
                     )}
                   />
                   {item.children && (
-                    <ChevronDown className="w-4 h-4 inline-block ml-1" />
+                    <ChevronDown className="w-4 h-4 ml-1 transition-transform duration-200 group-hover:rotate-180" />
                   )}
                 </Link>
 
                 {item.children && openDropdown === item.label && (
-                  <div className="absolute top-full left-0 pt-4 animate-fade-in-down">
-                    <div className="bg-white rounded-xl shadow-xl border border-gray-100 p-2 min-w-[240px]">
+                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 pt-4 animate-fade-in-down z-50">
+                    <div className="bg-white rounded-xl shadow-xl border border-gray-100 p-2 min-w-[280px] max-w-[320px]">
                       {item.children.map((child) => (
                         <Link
                           key={child.label}
                           to={child.href}
-                          className="block px-4 py-2.5 text-sm text-foreground hover:bg-primary-light hover:text-primary rounded-lg transition-colors whitespace-nowrap"
+                          className="block px-4 py-3 text-sm text-foreground hover:bg-primary/10 hover:text-primary rounded-lg transition-all duration-200 whitespace-nowrap"
                         >
                           {child.label}
                         </Link>
@@ -161,12 +161,12 @@ export function Header() {
           </nav>
 
           {/* CTA Buttons */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-3 flex-shrink-0">
             <Button
               size="sm"
               variant="outline"
               className={cn(
-                "font-bold rounded-full h-10 px-6 transition-all duration-300",
+                "font-bold rounded-full h-10 px-5 xl:px-6 text-sm transition-all duration-300 whitespace-nowrap",
                 isScrolled
                   ? "border-primary text-primary bg-white hover:bg-primary hover:text-white shadow-md"
                   : "border-white text-white bg-white/10 hover:bg-white/20 backdrop-blur-sm shadow-lg"
@@ -184,7 +184,7 @@ export function Header() {
             <Button
               size="sm"
               className={cn(
-                "font-bold rounded-full h-10 px-6 transition-all duration-300",
+                "font-bold rounded-full h-10 px-5 xl:px-6 text-sm transition-all duration-300 whitespace-nowrap",
                 isScrolled
                   ? "bg-primary hover:bg-primary-dark text-white shadow-md"
                   : "bg-white text-primary hover:bg-gray-100 shadow-lg"

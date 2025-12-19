@@ -28,9 +28,8 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Mail Adresimiz",
-    value: "bilgi@etiklab.net",
-    href: "mailto:bilgi@etiklab.net",
-    secondary: "sonuc@etiklab.net",
+    value: "info@kibrispasteurlab.com",
+    href: "mailto:info@kibrispasteurlab.com",
   },
 ];
 
@@ -77,16 +76,6 @@ export default function Contact() {
                           info.value
                         )}
                       </div>
-                      {info.secondary && (
-                        <div className="text-foreground text-base mt-1">
-                          <a
-                            href={`mailto:${info.secondary}`}
-                            className="hover:text-primary transition-colors"
-                          >
-                            {info.secondary}
-                          </a>
-                        </div>
-                      )}
                     </div>
                   </div>
                 ))}

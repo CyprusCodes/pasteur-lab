@@ -69,11 +69,11 @@ export function Footer() {
                 <span>+90 533 871 20 42</span>
               </a>
               <a
-                href="mailto:bilgi@etiklab.net"
+                href="mailto:info@kibrispasteurlab.com"
                 className="flex items-center gap-3 text-white/80 hover:text-primary transition-colors"
               >
                 <Mail className="w-5 h-5 flex-shrink-0" />
-                <span>bilgi@etiklab.net</span>
+                <span>info@kibrispasteurlab.com</span>
               </a>
               <div className="flex items-start gap-3 text-white/80">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />

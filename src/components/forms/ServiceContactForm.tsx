@@ -110,7 +110,7 @@ export function ServiceContactForm({
                     </div>
                     <div className="flex items-center gap-2">
                       <Mail className="w-4 h-4 text-primary" />
-                      <span>bilgi@etiklab.net</span>
+                      <span>info@kibrispasteurlab.com</span>
                     </div>
                   </div>
                   <div className="space-y-3">
