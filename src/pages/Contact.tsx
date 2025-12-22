@@ -3,8 +3,9 @@ import { PageHeader } from "@/components/ui/page-header";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, CheckCircle, XCircle } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import { useState } from "react";
 
 const contactInfo = [
   {
@@ -34,6 +35,46 @@ const contactInfo = [
 ];
 
 export default function Contact() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
+
+  const SCRIPT_URL =
+    "https://script.google.com/macros/s/AKfycbz7vMT1qM6Q9Dkifsao-fXBrD_w77e_pK9IyZEbAE2QPhT0a5zIcwlTNwsMWWjFBEgdYQ/exec";
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+
+    const formData = new FormData(e.target);
+    const params = new URLSearchParams();
+
+    formData.forEach((value, key) => {
+      params.append(key, value.toString());
+    });
+
+    fetch(`${SCRIPT_URL}?${params.toString()}`, {
+      method: "GET",
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.result === "success") {
+          setSubmitStatus("success");
+          e.target.reset();
+        } else {
+          setSubmitStatus("error");
+        }
+      })
+      .catch(() => {
+        setSubmitStatus("error");
+      })
+      .finally(() => {
+        setIsSubmitting(false);
+      });
+  }
+
   return (
     <Layout>
       <PageHeader
@@ -100,37 +141,97 @@ export default function Contact() {
 
             <div>
               <h3 className="heading-4 text-foreground mb-6">İletişim Formu</h3>
-              <form className="space-y-6">
+
+              {/* Success Message */}
+              {submitStatus === "success" && (
+                <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-green-800 mb-1">
+                        Mesajınız Gönderildi!
+                      </h4>
+                      <p className="text-green-700 text-sm">
+                        Teşekkürler! Mesajınız başarıyla iletildi. En kısa
+                        sürede size geri dönüş yapacağız.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Error Message */}
+              {submitStatus === "error" && (
+                <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+                  <div className="flex items-start gap-3">
+                    <XCircle className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" />
+                    <div>
+                      <h4 className="font-semibold text-red-800 mb-1">
+                        Bir Hata Oluştu
+                      </h4>
+                      <p className="text-red-700 text-sm">
+                        Mesajınız gönderilemedi. Lütfen tekrar deneyiniz veya
+                        telefon numaramızdan bize ulaşınız.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              <form className="space-y-6" onSubmit={handleSubmit}>
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Ad Soyad *
                   </label>
-                  <Input placeholder="Adınız Soyadınız" required />
+                  <Input
+                    name="ad_soyad"
+                    placeholder="Adınız Soyadınız"
+                    required
+                  />
                 </div>
+
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     E-posta *
                   </label>
-                  <Input type="email" placeholder="ornek@email.com" required />
+                  <Input
+                    name="e_posta"
+                    type="email"
+                    placeholder="ornek@email.com"
+                    required
+                  />
                 </div>
+
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Konu *
                   </label>
-                  <Input placeholder="Mesajınızın konusu" required />
+                  <Input
+                    name="konu"
+                    placeholder="Mesajınızın konusu"
+                    required
+                  />
                 </div>
+
                 <div>
                   <label className="block text-sm font-medium text-foreground mb-2">
                     Mesajınız *
                   </label>
                   <Textarea
+                    name="masaj"
                     placeholder="Mesajınızı yazın..."
                     rows={6}
                     required
                   />
                 </div>
-                <Button type="submit" size="lg" className="w-full">
-                  Gönder
+
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="w-full"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? "Gönderiliyor..." : "Gönder"}
                 </Button>
               </form>
             </div>
