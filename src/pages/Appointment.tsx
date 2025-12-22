@@ -3,115 +3,14 @@ import { PageHeader } from "@/components/ui/page-header";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  Calendar,
-  Clock,
-  MapPin,
-  Upload,
-  FileText,
-  X,
-  CheckCircle,
-  XCircle,
-} from "lucide-react";
+import { Calendar, Clock, MapPin, CheckCircle, XCircle } from "lucide-react";
 import { useState } from "react";
-
-function FileUploadArea({
-  onFilesChange,
-}: {
-  onFilesChange: (urls: string[]) => void;
-}) {
-  const [files, setFiles] = useState<File[]>([]);
-  const [uploadedUrls, setUploadedUrls] = useState<string[]>([]);
-
-  const handleFileSelect = async (
-    event: React.ChangeEvent<HTMLInputElement>
-  ) => {
-    if (event.target.files) {
-      const newFiles = Array.from(event.target.files);
-      if (files.length + newFiles.length <= 5) {
-        setFiles([...files, ...newFiles]);
-
-        // TODO: Upload to S3 and get URLs
-        // For now, create placeholder URLs
-        const placeholderUrls = newFiles.map(
-          (file) =>
-            `https://s3-bucket-placeholder.com/${Date.now()}-${file.name}`
-        );
-        const newUploadedUrls = [...uploadedUrls, ...placeholderUrls];
-        setUploadedUrls(newUploadedUrls);
-        onFilesChange(newUploadedUrls);
-      } else {
-        alert("En fazla 5 dosya yükleyebilirsiniz.");
-      }
-    }
-  };
-
-  const removeFile = (index: number) => {
-    const newFiles = files.filter((_, i) => i !== index);
-    const newUrls = uploadedUrls.filter((_, i) => i !== index);
-    setFiles(newFiles);
-    setUploadedUrls(newUrls);
-    onFilesChange(newUrls);
-  };
-
-  return (
-    <div>
-      <div className="border-2 border-dashed border-border rounded-xl p-8 text-center hover:border-primary/50 transition-colors cursor-pointer">
-        <input
-          type="file"
-          multiple
-          accept=".pdf,.jpg,.jpeg,.png"
-          onChange={handleFileSelect}
-          className="hidden"
-          id="file-upload"
-        />
-        <label htmlFor="file-upload" className="cursor-pointer">
-          <Upload className="w-8 h-8 text-muted-foreground mx-auto mb-2" />
-          <p className="text-muted-foreground text-sm">
-            Yüklemek için tıklayın veya dosyaları bu alana sürükleyin.
-          </p>
-          <p className="text-muted-foreground text-xs mt-1">
-            En fazla 5 dosya yükleyebilirsiniz.
-          </p>
-        </label>
-      </div>
-      {files.length > 0 && (
-        <div className="mt-4 space-y-2">
-          {files.map((file, index) => (
-            <div
-              key={index}
-              className="flex items-center justify-between p-3 bg-secondary rounded-lg"
-            >
-              <div className="flex items-center gap-3">
-                <FileText className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium">{file.name}</span>
-                <span className="text-xs text-muted-foreground">
-                  ({Math.round(file.size / 1024)} KB)
-                </span>
-              </div>
-              <Button
-                type="button"
-                variant="ghost"
-                size="sm"
-                onClick={() => removeFile(index)}
-                className="text-muted-foreground hover:text-destructive"
-              >
-                <X className="w-4 h-4" />
-              </Button>
-            </div>
-          ))}
-        </div>
-      )}
-    </div>
-  );
-}
 
 export default function Appointment() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<
     "idle" | "success" | "error"
   >("idle");
-  const [fileUrls, setFileUrls] = useState<string[]>([]);
 
   const SCRIPT_URL =
     "https://script.google.com/macros/s/AKfycbz7vMT1qM6Q9Dkifsao-fXBrD_w77e_pK9IyZEbAE2QPhT0a5zIcwlTNwsMWWjFBEgdYQ/exec";
@@ -126,11 +25,6 @@ export default function Appointment() {
     // IMPORTANT: route to the correct sheet
     formData.append("sheet", "randevu-formu");
 
-    // Add file URLs to form data
-    if (fileUrls.length > 0) {
-      formData.append("dosya_url", fileUrls.join(", "));
-    }
-
     const params = new URLSearchParams();
     for (const [key, value] of formData.entries()) {
       params.append(key, value as string);
@@ -144,7 +38,6 @@ export default function Appointment() {
         if (data.result === "success") {
           setSubmitStatus("success");
           e.target.reset();
-          setFileUrls([]);
           // Reset status after 7 seconds for appointment (longer than contact)
           setTimeout(() => setSubmitStatus("idle"), 7000);
         } else {
@@ -296,13 +189,6 @@ export default function Appointment() {
                   placeholder="Randevunuz hakkında eklemek istediğiniz notlar..."
                   rows={4}
                 />
-              </div>
-
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Dosya Yükleme
-                </label>
-                <FileUploadArea onFilesChange={setFileUrls} />
               </div>
 
               <Button
