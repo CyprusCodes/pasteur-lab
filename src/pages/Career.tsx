@@ -3,32 +3,32 @@ import { PageHeader } from "@/components/ui/page-header";
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock, Briefcase, Send } from "lucide-react";
 
-const openPositions = [
-  {
-    title: "Laborant",
-    location: "İstanbul - Kadıköy",
-    type: "Tam Zamanlı",
-    department: "Laboratuvar",
-  },
-  {
-    title: "Biyokimya Uzmanı",
-    location: "İstanbul - Şişli",
-    type: "Tam Zamanlı",
-    department: "Laboratuvar",
-  },
-  {
-    title: "Numune Alma Hemşiresi",
-    location: "İstanbul - Tüm Şubeler",
-    type: "Tam Zamanlı",
-    department: "Sağlık",
-  },
-  {
-    title: "Müşteri Hizmetleri Temsilcisi",
-    location: "İstanbul - Merkez",
-    type: "Tam Zamanlı",
-    department: "Operasyon",
-  },
-];
+// const openPositions = [
+//   {
+//     title: "Laborant",
+//     location: "İstanbul - Kadıköy",
+//     type: "Tam Zamanlı",
+//     department: "Laboratuvar",
+//   },
+//   {
+//     title: "Biyokimya Uzmanı",
+//     location: "İstanbul - Şişli",
+//     type: "Tam Zamanlı",
+//     department: "Laboratuvar",
+//   },
+//   {
+//     title: "Numune Alma Hemşiresi",
+//     location: "İstanbul - Tüm Şubeler",
+//     type: "Tam Zamanlı",
+//     department: "Sağlık",
+//   },
+//   {
+//     title: "Müşteri Hizmetleri Temsilcisi",
+//     location: "İstanbul - Merkez",
+//     type: "Tam Zamanlı",
+//     department: "Operasyon",
+//   },
+// ];
 
 export default function Career() {
   return (
@@ -75,7 +75,19 @@ export default function Career() {
           </div>
 
           <h2 className="heading-2 text-foreground mb-8">Açık Pozisyonlar</h2>
-          <div className="space-y-4">
+
+          {/* No open positions currently */}
+          <div className="bg-card rounded-2xl p-8 border border-border text-center">
+            <h3 className="heading-4 text-foreground mb-4">
+              Şu anda açık pozisyon bulunmamaktadır
+            </h3>
+            <p className="text-muted-foreground mb-6">
+              Yeni iş fırsatları için düzenli olarak kontrol edin.
+            </p>
+          </div>
+
+          {/* Commented out for now - no open positions */}
+          {/* <div className="space-y-4">
             {openPositions.map((position) => (
               <div
                 key={position.title}
@@ -102,7 +114,7 @@ export default function Career() {
                 </Button>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
     </Layout>
