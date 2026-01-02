@@ -98,7 +98,9 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group flex-shrink-0">
             <img
-              src={getImagePath(isScrolled ? "/logo.png" : "/logo-white.png")}
+              src={getImagePath(
+                isScrolled ? "pasteur-logo-no-bg.png" : "pasteur-logo-white.png"
+              )}
               alt="Pasteur Lab Laboratuvarı"
               className={cn(
                 "transition-all duration-300",

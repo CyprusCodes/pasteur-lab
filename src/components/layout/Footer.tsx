@@ -50,7 +50,7 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center gap-2 mb-6">
               <img
-                src={getImagePath("/logo-with-bg.png")}
+                src={getImagePath("pasteur-logo-with-bg.png")}
                 alt="Pasteur Lab Laboratuvarı"
               />
             </Link>

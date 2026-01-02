@@ -5,6 +5,7 @@ import { Calendar, User, ArrowRight, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import { getImagePath } from "@/utils/assets";
 
 const categories = [
   "Tümü",
@@ -22,10 +23,9 @@ const blogPosts = [
     title: "Laboratuvar Testlerinin Önemi ve Kullanım Alanları",
     excerpt:
       "Laboratuvar testleri, hastalıkların erken teşhisinde ve tedavi sürecinin doğru yönetilmesinde kritik rol oynar.",
-    image:
-      "https://etiklab.net/wp-content/uploads/2023/09/labovatuvar-Kopya.png",
+    image: getImagePath("blog/labovatuvar-Kopya.png"),
     date: "4 Eylül 2023",
-    author: "Pasteurlab",
+    author: "Etiklab",
     category: "Genel Sağlık",
     href: "/blog/laboratuvar-testlerinin-onemi",
   },
@@ -33,9 +33,9 @@ const blogPosts = [
     title: "Kolon Kanseri Nedir? Kolon Kanseri Testi Nasıl Yapılır?",
     excerpt:
       "Kolon kanseri belirtileri, risk faktörleri ve erken tanı için uygulanan test yöntemleri hakkında detaylı bilgi.",
-    image: "https://etiklab.net/wp-content/uploads/2023/09/kolon-kanseri.png",
+    image: getImagePath("blog/kolon-kanseri.png"),
     date: "4 Eylül 2023",
-    author: "Pasteurlab",
+    author: "Etiklab",
     category: "Sindirim Sistemi",
     href: "/blog/kolon-kanseri",
   },
@@ -43,9 +43,9 @@ const blogPosts = [
     title: "İnsülin Direnci Nedir? İnsülin Direnci Testinin Önemi Nelerdir?",
     excerpt:
       "İnsülin direnci nedir, nasıl teşhis edilir ve diyabet riskini azaltmak için neden önemlidir?",
-    image: "https://etiklab.net/wp-content/uploads/2023/09/insulin-direnci.png",
+    image: getImagePath("blog/insulin-direnci.png"),
     date: "7 Eylül 2023",
-    author: "Pasteurlab",
+    author: "Etiklab",
     category: "Diyabet",
     href: "/blog/insulin-direnci",
   },
@@ -53,9 +53,9 @@ const blogPosts = [
     title: "Çölyak Hastalığı Nedir? Çölyak Hastalığı Belirtileri Nelerdir?",
     excerpt:
       "Çölyak hastalığı, glüten hassasiyetiyle ortaya çıkan otoimmün bir hastalıktır. Belirtileri ve tanı süreci.",
-    image: "https://etiklab.net/wp-content/uploads/2023/09/colyak.png",
+    image: getImagePath("blog/colyak.png"),
     date: "7 Eylül 2023",
-    author: "Pasteurlab",
+    author: "Etiklab",
     category: "Sindirim Sistemi",
     href: "/blog/colyak-hastaligi",
   },
@@ -63,9 +63,9 @@ const blogPosts = [
     title: "Anemi Nedir? Anemi Belirtileri Nelerdir?",
     excerpt:
       "Anemi, kandaki hemoglobin seviyesinin düşmesiyle ortaya çıkar. Nedenleri ve belirtileri hakkında bilinçli rehber.",
-    image: "https://etiklab.net/wp-content/uploads/2023/09/anemi.png",
+    image: getImagePath("blog/anemi.png"),
     date: "7 Eylül 2023",
-    author: "Pasteurlab",
+    author: "Etiklab",
     category: "Kan Hastalıkları",
     href: "/blog/anemi",
   },
@@ -73,9 +73,9 @@ const blogPosts = [
     title: "Check Up Nedir? Check Up Yapılmasının Önemli Nedenleri Nelerdir?",
     excerpt:
       "Düzenli check-up yaptırmak, hastalıkları erken dönemde tespit ederek sağlıklı yaşamı destekler.",
-    image: "https://etiklab.net/wp-content/uploads/2023/09/checkup.png",
+    image: getImagePath("blog/checkup.png"),
     date: "4 Eylül 2023",
-    author: "Pasteurlab",
+    author: "Etiklab",
     category: "Genel Sağlık",
     href: "/blog/check-up",
   },
@@ -84,9 +84,9 @@ const blogPosts = [
       "Diyabet (Şeker Hastalığı) Nedir? Diyabet Testi Yaptırmanın Önemi Nelerdir?",
     excerpt:
       "Diyabet nedir, kimler risk altındadır ve diyabet testleri neden hayati öneme sahiptir?",
-    image: "https://etiklab.net/wp-content/uploads/2023/09/diyabet-Kopya.png",
+    image: getImagePath("blog/diyabet-Kopya.png"),
     date: "4 Eylül 2023",
-    author: "Pasteurlab",
+    author: "Etiklab",
     category: "Diyabet",
     href: "/blog/diyabet",
   },
@@ -95,10 +95,9 @@ const blogPosts = [
       "Beta HCG Nedir? Gebelik Haftasına Göre Beta HCG Değerleri Nelerdir?",
     excerpt:
       "Beta HCG hormonu nedir, gebelikte nasıl değerlendirilir ve haftalara göre değer aralıkları.",
-    image:
-      "https://etiklab.net/wp-content/uploads/2023/09/ca0d22eb-85c7-482a-a132-8d8700540c0f.png",
+    image: getImagePath("blog/ca0d22eb-85c7-482a-a132-8d8700540c0f.png"),
     date: "4 Eylül 2023",
-    author: "Pasteurlab",
+    author: "Etiklab",
     category: "Hamilelik",
     href: "/blog/beta-hcg",
   },
@@ -106,9 +105,9 @@ const blogPosts = [
     title: "Tiroid Hastalıkları ve Tiroid Testlerinin Önemi",
     excerpt:
       "Tiroid bezinin vücut üzerindeki etkileri, tiroid hastalıkları ve tanıda kullanılan testler.",
-    image: "https://etiklab.net/wp-content/uploads/2023/09/troid.png",
+    image: getImagePath("blog/troid.png"),
     date: "4 Eylül 2023",
-    author: "Pasteurlab",
+    author: "Etiklab",
     category: "Tiroid",
     href: "/blog/tiroid-hastaliklari",
   },
@@ -116,10 +115,11 @@ const blogPosts = [
     title: "HPV Belirtileri Nelerdir? HPV’den Nasıl Korunuruz?",
     excerpt:
       "HPV nedir, belirtileri nelerdir ve HPV enfeksiyonundan korunma yolları hakkında bilmeniz gerekenler.",
-    image:
-      "https://etiklab.net/wp-content/uploads/2023/09/human-papillomavirus-hpv-sexually-transmitted-infection_59529-1018.jpg",
+    image: getImagePath(
+      "blog/human-papillomavirus-hpv-sexually-transmitted-infection_59529-1018.jpg"
+    ),
     date: "4 Eylül 2023",
-    author: "Pasteurlab",
+    author: "Etiklab",
     category: "Enfeksiyon",
     href: "/blog/hpv",
   },
