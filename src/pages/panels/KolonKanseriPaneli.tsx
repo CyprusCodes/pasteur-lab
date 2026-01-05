@@ -61,62 +61,116 @@ export default function KolonKanseriPaneli() {
             </div>
 
             {/* Article Content */}
-            <div className="prose prose-lg max-w-none">
-              <h2>Kolon Kanseri Paneli Nedir?</h2>
-              <p>
-                Kolon kanseri paneli, büyük bağırsak (kolon) ve rektum
-                kanserlerinin erken teşhisinde kullanılan özel bir test
-                kombinasyonudur. Bu panel, kanser belirteçleri ve diğer tanı
-                yardımcı testleri içerir.
-              </p>
+            <div className="prose prose-lg max-w-none space-y-8">
+              <div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                  Kolon Kanseri Paneli Nedir?
+                </h2>
+                <p className="text-gray-700 leading-relaxed">
+                  Kolon kanseri paneli, büyük bağırsak (kolon) ve rektum
+                  kanserlerinin erken teşhisinde kullanılan özel bir test
+                  kombinasyonudur. Bu panel, kanser belirteçleri ve diğer tanı
+                  yardımcı testleri içerir.
+                </p>
+              </div>
 
-              <h3>Panelde Yer Alan Testler</h3>
-              <ul>
-                <li>
-                  <strong>CEA (Karsinoembriyonik Antijen):</strong> Kolorektal
-                  kanserlerde yükselen tümör belirteci
-                </li>
-                <li>
-                  <strong>CA 19-9:</strong> Gastrointestinal kanserlerde
-                  kullanılan tümör markırı
-                </li>
-                <li>
-                  <strong>Gaitada Gizli Kan (FOBT):</strong> Dışkıda mikroskobik
-                  kan varlığını tespit eder
-                </li>
-                <li>
-                  <strong>Genetik Belirteçler:</strong> Kalıtsal kanser riskini
-                  değerlendiren testler
-                </li>
-              </ul>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Panelde Yer Alan Testler
+                </h3>
+                <div className="space-y-3">
+                  <div className="bg-teal-50 p-4 rounded-lg">
+                    <strong className="text-teal-700">
+                      CEA (Karsinoembriyonik Antijen):
+                    </strong>{" "}
+                    Kolorektal kanserlerde yükselen tümör belirteci
+                  </div>
+                  <div className="bg-teal-50 p-4 rounded-lg">
+                    <strong className="text-teal-700">CA 19-9:</strong>{" "}
+                    Gastrointestinal kanserlerde kullanılan tümör markırı
+                  </div>
+                  <div className="bg-teal-50 p-4 rounded-lg">
+                    <strong className="text-teal-700">
+                      Gaitada Gizli Kan (FOBT):
+                    </strong>{" "}
+                    Dışkıda mikroskobik kan varlığını tespit eder
+                  </div>
+                  <div className="bg-teal-50 p-4 rounded-lg">
+                    <strong className="text-teal-700">
+                      Genetik Belirteçler:
+                    </strong>{" "}
+                    Kalıtsal kanser riskini değerlendiren testler
+                  </div>
+                </div>
+              </div>
 
-              <h3>Risk Faktörleri</h3>
-              <p>
-                Aşağıdaki durumlarla karşılaşanlarda kolon kanseri riski
-                artmıştır:
-              </p>
-              <ul>
-                <li>50 yaş üzeri olmak</li>
-                <li>Ailede kolorektal kanser öyküsü</li>
-                <li>İnflamatuar bağırsak hastalığı (Crohn, ülseratif kolit)</li>
-                <li>Polip öyküsü</li>
-                <li>Sigara ve alkol kullanımı</li>
-                <li>Sedanter yaşam tarzı</li>
-                <li>Yüksek yağlı, düşük lifli beslenme</li>
-                <li>Obezite</li>
-              </ul>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Risk Faktörleri
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Aşağıdaki durumlarla karşılaşanlarda kolon kanseri riski
+                  artmıştır:
+                </p>
+                <div className="grid md:grid-cols-2 gap-3">
+                  <div className="bg-orange-50 p-3 rounded-lg text-orange-700">
+                    50 yaş üzeri olmak
+                  </div>
+                  <div className="bg-orange-50 p-3 rounded-lg text-orange-700">
+                    Ailede kolorektal kanser öyküsü
+                  </div>
+                  <div className="bg-orange-50 p-3 rounded-lg text-orange-700">
+                    İnflamatuar bağırsak hastalığı
+                  </div>
+                  <div className="bg-orange-50 p-3 rounded-lg text-orange-700">
+                    Polip öyküsü
+                  </div>
+                  <div className="bg-orange-50 p-3 rounded-lg text-orange-700">
+                    Sigara ve alkol kullanımı
+                  </div>
+                  <div className="bg-orange-50 p-3 rounded-lg text-orange-700">
+                    Sedanter yaşam tarzı
+                  </div>
+                  <div className="bg-orange-50 p-3 rounded-lg text-orange-700">
+                    Yüksek yağlı, düşük lifli beslenme
+                  </div>
+                  <div className="bg-orange-50 p-3 rounded-lg text-orange-700">
+                    Obezite
+                  </div>
+                </div>
+              </div>
 
-              <h3>Erken Belirtiler</h3>
-              <p>Kolon kanserinin erken belirtileri şunlardır:</p>
-              <ul>
-                <li>Bağırsak alışkanlıklarında değişiklik</li>
-                <li>Dışkıda kan veya mukus</li>
-                <li>Karın ağrısı ve kramplar</li>
-                <li>Açıklanamayan kilo kaybı</li>
-                <li>Yorgunluk ve halsizlik</li>
-                <li>Demir eksikliği anemisi</li>
-                <li>Rektal kanama</li>
-              </ul>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Erken Belirtiler
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Kolon kanserinin erken belirtileri şunlardır:
+                </p>
+                <div className="grid md:grid-cols-2 gap-3">
+                  <div className="bg-red-50 p-3 rounded-lg text-red-700">
+                    Bağırsak alışkanlıklarında değişiklik
+                  </div>
+                  <div className="bg-red-50 p-3 rounded-lg text-red-700">
+                    Dışkıda kan veya mukus
+                  </div>
+                  <div className="bg-red-50 p-3 rounded-lg text-red-700">
+                    Karın ağrısı ve kramplar
+                  </div>
+                  <div className="bg-red-50 p-3 rounded-lg text-red-700">
+                    Açıklanamayan kilo kaybı
+                  </div>
+                  <div className="bg-red-50 p-3 rounded-lg text-red-700">
+                    Yorgunluk ve halsizlik
+                  </div>
+                  <div className="bg-red-50 p-3 rounded-lg text-red-700">
+                    Demir eksikliği anemisi
+                  </div>
+                  <div className="bg-red-50 p-3 rounded-lg text-red-700 md:col-span-2">
+                    Rektal kanama
+                  </div>
+                </div>
+              </div>
 
               <h3>Tarama Önerileri</h3>
               <p>

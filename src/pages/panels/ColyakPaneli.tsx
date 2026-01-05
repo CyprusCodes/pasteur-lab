@@ -61,85 +61,159 @@ export default function ColyakPaneli() {
             </div>
 
             {/* Article Content */}
-            <div className="prose prose-lg max-w-none">
-              <h2>Çölyak Paneli Nedir?</h2>
-              <p>
-                Çölyak paneli, çölyak hastalığının teşhisinde kullanılan
-                serolojik testlerden oluşur. Bu testler, gluten intoleransını ve
-                otoimmün reaksiyonları değerlendirmek için kullanılır.
-              </p>
+            <div className="prose prose-lg max-w-none space-y-8">
+              <div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                  Çölyak Paneli Nedir?
+                </h2>
+                <p className="text-gray-700 leading-relaxed">
+                  Çölyak paneli, çölyak hastalığının teşhisinde kullanılan
+                  serolojik testlerden oluşur. Bu testler, gluten intoleransını
+                  ve otoimmün reaksiyonları değerlendirmek için kullanılır.
+                </p>
+              </div>
 
-              <h3>Panelde Yer Alan Testler</h3>
-              <ul>
-                <li>
-                  <strong>Anti-tTG (Anti-Transglutaminaz):</strong> Çölyak
-                  hastalığının en spesifik göstergesi
-                </li>
-                <li>
-                  <strong>Anti-DGP (Anti-Deamidated Gliadin Peptit):</strong>{" "}
-                  Özellikle çocuklarda duyarlı test
-                </li>
-                <li>
-                  <strong>Total IgA:</strong> IgA eksikliğini değerlendirmek
-                  için
-                </li>
-                <li>
-                  <strong>Anti-Endomysium:</strong> Konfirmasyon testi olarak
-                  kullanılır
-                </li>
-              </ul>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Panelde Yer Alan Testler
+                </h3>
+                <div className="space-y-3">
+                  <div className="bg-amber-50 p-4 rounded-lg">
+                    <strong className="text-amber-700">
+                      Anti-tTG (Anti-Transglutaminaz):
+                    </strong>{" "}
+                    Çölyak hastalığının en spesifik göstergesi
+                  </div>
+                  <div className="bg-amber-50 p-4 rounded-lg">
+                    <strong className="text-amber-700">
+                      Anti-DGP (Anti-Deamidated Gliadin Peptit):
+                    </strong>{" "}
+                    Özellikle çocuklarda duyarlı test
+                  </div>
+                  <div className="bg-amber-50 p-4 rounded-lg">
+                    <strong className="text-amber-700">Total IgA:</strong> IgA
+                    eksikliğini değerlendirmek için
+                  </div>
+                  <div className="bg-amber-50 p-4 rounded-lg">
+                    <strong className="text-amber-700">Anti-Endomysium:</strong>{" "}
+                    Konfirmasyon testi olarak kullanılır
+                  </div>
+                </div>
+              </div>
 
-              <h3>Çölyak Hastalığı Nedir?</h3>
-              <p>
-                Çölyak hastalığı, gluten içeren gıdaları sindiremeyen kişilerde
-                gelişen otoimmün bir hastalıktır. Genetik yatkınlık gerektirir
-                ve yaşam boyu sürer.
-              </p>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Çölyak Hastalığı Nedir?
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Çölyak hastalığı, gluten içeren gıdaları sindiremeyen
+                  kişilerde gelişen otoimmün bir hastalıktır. Genetik yatkınlık
+                  gerektirir ve yaşam boyu sürer.
+                </p>
+              </div>
 
-              <h3>Belirtiler</h3>
-              <p>Çölyak hastalığının belirtileri şunlardır:</p>
-              <ul>
-                <li>Kronik ishal</li>
-                <li>Karın şişkinliği ve ağrısı</li>
-                <li>Kilo kaybı</li>
-                <li>Yorgunluk</li>
-                <li>Demir eksikliği anemisi</li>
-                <li>Kemik ağrıları</li>
-                <li>Deri döküntüleri</li>
-                <li>Çocuklarda büyüme geriliği</li>
-              </ul>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Belirtiler
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Çölyak hastalığının belirtileri şunlardır:
+                </p>
+                <div className="grid md:grid-cols-2 gap-3">
+                  <div className="bg-red-50 p-3 rounded-lg text-red-700">
+                    Kronik ishal
+                  </div>
+                  <div className="bg-red-50 p-3 rounded-lg text-red-700">
+                    Karın şişkinliği ve ağrısı
+                  </div>
+                  <div className="bg-red-50 p-3 rounded-lg text-red-700">
+                    Kilo kaybı
+                  </div>
+                  <div className="bg-red-50 p-3 rounded-lg text-red-700">
+                    Yorgunluk
+                  </div>
+                  <div className="bg-red-50 p-3 rounded-lg text-red-700">
+                    Demir eksikliği anemisi
+                  </div>
+                  <div className="bg-red-50 p-3 rounded-lg text-red-700">
+                    Kemik ağrıları
+                  </div>
+                  <div className="bg-red-50 p-3 rounded-lg text-red-700">
+                    Deri döküntüleri
+                  </div>
+                  <div className="bg-red-50 p-3 rounded-lg text-red-700">
+                    Çocuklarda büyüme geriliği
+                  </div>
+                </div>
+              </div>
 
-              <h3>Risk Faktörleri</h3>
-              <ul>
-                <li>Aile öyküsü (birinci derece akrabalarda %10 risk)</li>
-                <li>Tip 1 diyabet</li>
-                <li>Tiroid hastalıkları</li>
-                <li>Down sendromu</li>
-                <li>İrritabl bağırsak sendromu</li>
-              </ul>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Risk Faktörleri
+                </h3>
+                <div className="space-y-3">
+                  <div className="bg-yellow-50 p-4 rounded-lg text-yellow-700">
+                    Aile öyküsü (birinci derece akrabalarda %10 risk)
+                  </div>
+                  <div className="bg-yellow-50 p-4 rounded-lg text-yellow-700">
+                    Tip 1 diyabet
+                  </div>
+                  <div className="bg-yellow-50 p-4 rounded-lg text-yellow-700">
+                    Tiroid hastalıkları
+                  </div>
+                  <div className="bg-yellow-50 p-4 rounded-lg text-yellow-700">
+                    Down sendromu
+                  </div>
+                  <div className="bg-yellow-50 p-4 rounded-lg text-yellow-700">
+                    İrritabl bağırsak sendromu
+                  </div>
+                </div>
+              </div>
 
-              <h3>Test Öncesi Hazırlık</h3>
-              <p>
-                Testler gluten içeren diyetle yapılmalıdır. Glutensiz diyete
-                geçmeden önce test yaptırmak önemlidir. Test öncesi en az 6
-                hafta gluten tüketimi gerekir.
-              </p>
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-blue-700 mb-4">
+                  Test Öncesi Hazırlık
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Testler gluten içeren diyetle yapılmalıdır. Glutensiz diyete
+                  geçmeden önce test yaptırmak önemlidir. Test öncesi en az 6
+                  hafta gluten tüketimi gerekir.
+                </p>
+              </div>
 
-              <h3>Tedavi</h3>
-              <p>
-                Çölyak hastalığının tek tedavisi yaşam boyu glutensiz diyet
-                uygulamaktır. Gluten içeren buğday, arpa, çavdar tamamen
-                eliminasyon edilmelidir.
-              </p>
+              <div className="bg-green-50 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-green-700 mb-4">
+                  Tedavi
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Çölyak hastalığının tek tedavisi yaşam boyu glutensiz diyet
+                  uygulamaktır. Gluten içeren buğday, arpa, çavdar tamamen
+                  eliminasyon edilmelidir.
+                </p>
+              </div>
 
-              <h3>Glutensiz Yaşam</h3>
-              <ul>
-                <li>Etiket okuma alışkanlığı edinin</li>
-                <li>Çapraz kontaminasyondan kaçının</li>
-                <li>Glutensiz ürün markalarını öğrenin</li>
-                <li>Dışarıda yemek yerken dikkatli olun</li>
-                <li>Ailenizi bilgilendirin</li>
-              </ul>
+              <div className="bg-primary/10 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-primary mb-4">
+                  Glutensiz Yaşam
+                </h3>
+                <div className="grid md:grid-cols-2 gap-3">
+                  <div className="bg-white p-3 rounded-lg border border-primary/20 text-gray-700">
+                    Etiket okuma alışkanlığı edinin
+                  </div>
+                  <div className="bg-white p-3 rounded-lg border border-primary/20 text-gray-700">
+                    Çapraz kontaminasyondan kaçının
+                  </div>
+                  <div className="bg-white p-3 rounded-lg border border-primary/20 text-gray-700">
+                    Glutensiz ürün markalarını öğrenin
+                  </div>
+                  <div className="bg-white p-3 rounded-lg border border-primary/20 text-gray-700">
+                    Dışarıda yemek yerken dikkatli olun
+                  </div>
+                  <div className="bg-white p-3 rounded-lg border border-primary/20 text-gray-700 md:col-span-2">
+                    Ailenizi bilgilendirin
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Navigation */}

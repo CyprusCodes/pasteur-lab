@@ -60,111 +60,219 @@ export default function RomatolojiPaneli() {
             </div>
 
             {/* Article Content */}
-            <div className="prose prose-lg max-w-none">
-              <h2>Romatoloji Paneli Nedir?</h2>
-              <p>
-                Romatoloji paneli, romatizmal ve otoimmün hastalıkların
-                tanısında kullanılan özel laboratuvar testlerinden oluşur. Bu
-                testler, eklem, kas ve bağ dokularını etkileyen hastalıkları
-                değerlendirir.
-              </p>
+            <div className="prose prose-lg max-w-none space-y-8">
+              <div>
+                <h2 className="text-2xl font-bold text-gray-900 mb-4">
+                  Romatoloji Paneli Nedir?
+                </h2>
+                <p className="text-gray-700 leading-relaxed">
+                  Romatoloji paneli, romatizmal ve otoimmün hastalıkların
+                  tanısında kullanılan özel laboratuvar testlerinden oluşur. Bu
+                  testler, eklem, kas ve bağ dokularını etkileyen hastalıkları
+                  değerlendirir.
+                </p>
+              </div>
 
-              <h3>Panelde Yer Alan Testler</h3>
-              <ul>
-                <li>
-                  <strong>RF (Romatoid Faktör):</strong> Romatoid artrit
-                  tanısında kullanılır
-                </li>
-                <li>
-                  <strong>Anti-CCP (Siklik Sitrullinlenmiş Peptit):</strong>{" "}
-                  Romatoid artrit için spesifik antikor
-                </li>
-                <li>
-                  <strong>ANA (Antinuklear Antikor):</strong> Otoimmün
-                  hastalıkların genel tarama testi
-                </li>
-                <li>
-                  <strong>ESR (Eritrosit Sedimantasyon Hızı):</strong>{" "}
-                  İnflamasyon göstergesi
-                </li>
-                <li>
-                  <strong>CRP (C-Reaktif Protein):</strong> Aküt faz reaktanı
-                </li>
-              </ul>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Panelde Yer Alan Testler
+                </h3>
+                <div className="space-y-3">
+                  <div className="bg-violet-50 p-4 rounded-lg">
+                    <strong className="text-violet-700">
+                      RF (Romatoid Faktör):
+                    </strong>{" "}
+                    Romatoid artrit tanısında kullanılır
+                  </div>
+                  <div className="bg-violet-50 p-4 rounded-lg">
+                    <strong className="text-violet-700">
+                      Anti-CCP (Siklik Sitrullinlenmiş Peptit):
+                    </strong>{" "}
+                    Romatoid artrit için spesifik antikor
+                  </div>
+                  <div className="bg-violet-50 p-4 rounded-lg">
+                    <strong className="text-violet-700">
+                      ANA (Antinuklear Antikor):
+                    </strong>{" "}
+                    Otoimmün hastalıkların genel tarama testi
+                  </div>
+                  <div className="bg-violet-50 p-4 rounded-lg">
+                    <strong className="text-violet-700">
+                      ESR (Eritrosit Sedimantasyon Hızı):
+                    </strong>{" "}
+                    İnflamasyon göstergesi
+                  </div>
+                  <div className="bg-violet-50 p-4 rounded-lg">
+                    <strong className="text-violet-700">
+                      CRP (C-Reaktif Protein):
+                    </strong>{" "}
+                    Aküt faz reaktanı
+                  </div>
+                </div>
+              </div>
 
-              <h3>Romatizmal Hastalıklar</h3>
-              <p>Panel ile tespit edilebilen belli başlı hastalıklar:</p>
-              <ul>
-                <li>
-                  <strong>Romatoid Artrit:</strong> Eklemlerde kronik
-                  inflamasyon
-                </li>
-                <li>
-                  <strong>Sjögren Sendromu:</strong> Tükürük ve gözyaşı
-                  bezlerini etkiler
-                </li>
-                <li>
-                  <strong>Sistemik Lupus Eritematosus (SLE):</strong> Çoklu
-                  organ tutulumu
-                </li>
-                <li>
-                  <strong>Skleroderma:</strong> Deri ve iç organları etkiler
-                </li>
-                <li>
-                  <strong>Ankylosing Spondylitis:</strong> Omurga tutulumu
-                </li>
-              </ul>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Romatizmal Hastalıklar
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Panel ile tespit edilebilen belli başlı hastalıklar:
+                </p>
+                <div className="space-y-3">
+                  <div className="bg-cyan-50 p-4 rounded-lg">
+                    <strong className="text-cyan-700">Romatoid Artrit:</strong>{" "}
+                    Eklemlerde kronik inflamasyon
+                  </div>
+                  <div className="bg-cyan-50 p-4 rounded-lg">
+                    <strong className="text-cyan-700">Sjögren Sendromu:</strong>{" "}
+                    Tükürük ve gözyaşı bezlerini etkiler
+                  </div>
+                  <div className="bg-cyan-50 p-4 rounded-lg">
+                    <strong className="text-cyan-700">
+                      Sistemik Lupus Eritematosus (SLE):
+                    </strong>{" "}
+                    Çoklu organ tutulumu
+                  </div>
+                  <div className="bg-cyan-50 p-4 rounded-lg">
+                    <strong className="text-cyan-700">Skleroderma:</strong> Deri
+                    ve iç organları etkiler
+                  </div>
+                  <div className="bg-cyan-50 p-4 rounded-lg">
+                    <strong className="text-cyan-700">
+                      Ankylosing Spondylitis:
+                    </strong>{" "}
+                    Omurga tutulumu
+                  </div>
+                </div>
+              </div>
 
-              <h3>Belirtiler</h3>
-              <p>Romatizmal hastalıkların genel belirtileri:</p>
-              <ul>
-                <li>Eklem ağrısı ve şişlik</li>
-                <li>Sabah tutukluk</li>
-                <li>Yorgunluk ve halsizlik</li>
-                <li>Ateş</li>
-                <li>Deri döküntüleri</li>
-                <li>Kaş ve göz kuruluğu</li>
-                <li>Kas ağrıları</li>
-                <li>Raynaud fenomeni</li>
-              </ul>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Belirtiler
+                </h3>
+                <p className="text-gray-700 leading-relaxed mb-4">
+                  Romatizmal hastalıkların genel belirtileri:
+                </p>
+                <div className="grid md:grid-cols-2 gap-3">
+                  <div className="bg-rose-50 p-3 rounded-lg text-rose-700">
+                    Eklem ağrısı ve şişlik
+                  </div>
+                  <div className="bg-rose-50 p-3 rounded-lg text-rose-700">
+                    Sabah tutukluk
+                  </div>
+                  <div className="bg-rose-50 p-3 rounded-lg text-rose-700">
+                    Yorgunluk ve halsizlik
+                  </div>
+                  <div className="bg-rose-50 p-3 rounded-lg text-rose-700">
+                    Ateş
+                  </div>
+                  <div className="bg-rose-50 p-3 rounded-lg text-rose-700">
+                    Deri döküntüleri
+                  </div>
+                  <div className="bg-rose-50 p-3 rounded-lg text-rose-700">
+                    Ağız ve göz kuruluğu
+                  </div>
+                  <div className="bg-rose-50 p-3 rounded-lg text-rose-700">
+                    Kas ağrıları
+                  </div>
+                  <div className="bg-rose-50 p-3 rounded-lg text-rose-700">
+                    Raynaud fenomeni
+                  </div>
+                </div>
+              </div>
 
-              <h3>Risk Faktörleri</h3>
-              <ul>
-                <li>Genetik yatkınlık</li>
-                <li>Cinsiyet (kadınlarda daha sık)</li>
-                <li>Yaş (orta yaş)</li>
-                <li>Sigara kullanımı</li>
-                <li>Enfeksiyonlar</li>
-                <li>Stres</li>
-                <li>Çevresel faktörler</li>
-              </ul>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Risk Faktörleri
+                </h3>
+                <div className="grid md:grid-cols-2 gap-3">
+                  <div className="bg-amber-50 p-3 rounded-lg text-amber-700">
+                    Genetik yatkınlık
+                  </div>
+                  <div className="bg-amber-50 p-3 rounded-lg text-amber-700">
+                    Cinsiyet (kadınlarda daha sık)
+                  </div>
+                  <div className="bg-amber-50 p-3 rounded-lg text-amber-700">
+                    Yaş (orta yaş)
+                  </div>
+                  <div className="bg-amber-50 p-3 rounded-lg text-amber-700">
+                    Sigara kullanımı
+                  </div>
+                  <div className="bg-amber-50 p-3 rounded-lg text-amber-700">
+                    Enfeksiyonlar
+                  </div>
+                  <div className="bg-amber-50 p-3 rounded-lg text-amber-700">
+                    Stres
+                  </div>
+                  <div className="bg-amber-50 p-3 rounded-lg text-amber-700 md:col-span-2">
+                    Çevresel faktörler
+                  </div>
+                </div>
+              </div>
 
-              <h3>Test Sonuçlarının Değerlendirilmesi</h3>
-              <p>
-                Romatoloji testleri tek başına tanı koydurmaz. Klinik bulgularla
-                birlikte değerlendirilmelidir. Pozitif sonuçlar her zaman
-                hastalık anlamına gelmez, sağlıklı kişilerde de görülebilir.
-              </p>
+              <div className="bg-blue-50 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-blue-700 mb-4">
+                  Test Sonuçlarının Değerlendirilmesi
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Romatoloji testleri tek başına tanı koydurmaz. Klinik
+                  bulgularla birlikte değerlendirilmelidir. Pozitif sonuçlar her
+                  zaman hastalık anlamına gelmez, sağlıklı kişilerde de
+                  görülebilir.
+                </p>
+              </div>
 
-              <h3>Tedavi Yaklaşımları</h3>
-              <ul>
-                <li>Anti-inflamatuar ilaçlar (NSAİD)</li>
-                <li>Hastalık modifiye edici ilaçlar (DMARD)</li>
-                <li>Biyolojik ilaçlar</li>
-                <li>Fizik tedavi</li>
-                <li>Egzersiz programı</li>
-                <li>Yaşam tarzı değişiklikleri</li>
-              </ul>
+              <div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Tedavi Yaklaşımları
+                </h3>
+                <div className="space-y-3">
+                  <div className="bg-green-50 p-4 rounded-lg text-green-700">
+                    Anti-inflamatuar ilaçlar (NSAİD)
+                  </div>
+                  <div className="bg-green-50 p-4 rounded-lg text-green-700">
+                    Hastalık modifiye edici ilaçlar (DMARD)
+                  </div>
+                  <div className="bg-green-50 p-4 rounded-lg text-green-700">
+                    Biyolojik ilaçlar
+                  </div>
+                  <div className="bg-green-50 p-4 rounded-lg text-green-700">
+                    Fizik tedavi
+                  </div>
+                  <div className="bg-green-50 p-4 rounded-lg text-green-700">
+                    Egzersiz programı
+                  </div>
+                  <div className="bg-green-50 p-4 rounded-lg text-green-700">
+                    Yaşam tarzı değişiklikleri
+                  </div>
+                </div>
+              </div>
 
-              <h3>Yaşam Kalitesini Artırma</h3>
-              <ul>
-                <li>Düzenli egzersiz</li>
-                <li>Sağlıklı beslenme</li>
-                <li>Stres yönetimi</li>
-                <li>Yeterli uyku</li>
-                <li>Sigara bırakma</li>
-                <li>Sosyal destek</li>
-              </ul>
+              <div className="bg-primary/10 p-6 rounded-lg">
+                <h3 className="text-xl font-semibold text-primary mb-4">
+                  Yaşam Kalitesini Artırma
+                </h3>
+                <div className="grid md:grid-cols-2 gap-3">
+                  <div className="bg-white p-3 rounded-lg border border-primary/20 text-gray-700">
+                    Düzenli egzersiz
+                  </div>
+                  <div className="bg-white p-3 rounded-lg border border-primary/20 text-gray-700">
+                    Sağlıklı beslenme
+                  </div>
+                  <div className="bg-white p-3 rounded-lg border border-primary/20 text-gray-700">
+                    Stres yönetimi
+                  </div>
+                  <div className="bg-white p-3 rounded-lg border border-primary/20 text-gray-700">
+                    Yeterli uyku
+                  </div>
+                  <div className="bg-white p-3 rounded-lg border border-primary/20 text-gray-700">
+                    Sigara bırakma
+                  </div>
+                  <div className="bg-white p-3 rounded-lg border border-primary/20 text-gray-700">
+                    Sosyal destek
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Navigation */}
