@@ -203,7 +203,7 @@ export function ServiceContactForm({
                   <div className="space-y-3">
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4 text-primary" />
-                      <span>Dr. Remzi Gönenç Sk, Lefkoşa 99010</span>
+                      <span>Cengiz Topel hastanesi karşısı - Yeşilyurt/ Lefke, Lefka, Cyprus</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Clock className="w-4 h-4 text-primary" />

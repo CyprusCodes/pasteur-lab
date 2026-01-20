@@ -23,7 +23,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Konum",
-    value: "Dr. Remzi Gönenç Sk, Lefkoşa 99010",
+    value: "Cengiz Topel hastanesi karşısı - Yeşilyurt/ Lefke, Lefka, Cyprus",
     href: "#",
   },
   {

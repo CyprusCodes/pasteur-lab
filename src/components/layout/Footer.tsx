@@ -77,7 +77,10 @@ export function Footer() {
               </a>
               <div className="flex items-start gap-3 text-white/80">
                 <MapPin className="w-5 h-5 mt-0.5 flex-shrink-0" />
-                <span>Dr. Remzi Gönenç Sk, Lefkoşa 99010</span>
+                <span>
+                  Cengiz Topel hastanesi karşısı - Yeşilyurt/ Lefke, Lefka,
+                  Cyprus
+                </span>
               </div>
               <div className="flex items-center gap-3 text-white/80">
                 <Clock className="w-5 h-5 flex-shrink-0" />
