@@ -41,7 +41,7 @@ export default function Contact() {
   >("idle");
 
   const SCRIPT_URL =
-    "https://script.google.com/macros/s/AKfycbz7vMT1qM6Q9Dkifsao-fXBrD_w77e_pK9IyZEbAE2QPhT0a5zIcwlTNwsMWWjFBEgdYQ/exec";
+    "https://script.google.com/macros/s/AKfycby7igsqgohTzEGIaw3RyPk4jKqgeC2r-C8awiDmsmBL8j-8HohTXN5IDrY5vIXgqp-Jdw/exec";
 
   function handleSubmit(e) {
     e.preventDefault();
