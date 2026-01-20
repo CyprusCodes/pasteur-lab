@@ -251,7 +251,7 @@ export default function Contact() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Pasteur Lab Konumu - Dr. Remzi Gönenç Sk, Lefkoşa"
+                title="Pasteur Lab Konumu - Cengiz Topel hastanesi karşısı - Yeşilyurt/ Lefke, Lefka, Cyprus"
               />
             </div>
           </div>
