@@ -23,7 +23,7 @@ export function HeroSection() {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url('${getImagePath(
-            "medical-pictures/image.png"
+            "medical-pictures/image.png",
           )}')`,
           transform: `translateY(${scrollY * 0.5}px)`,
         }}
@@ -114,18 +114,16 @@ export function HeroSection() {
           {/* Scrolling logos */}
           <div className="relative w-full overflow-hidden">
             <div className="flex items-center justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16 flex-wrap">
-              {[
-                "/accreditations/kktc.png",
-                "/accreditations/kbudek.png",
-                "/accreditations/etik-hastanesi.png",
-              ].map((src, i) => (
-                <img
-                  key={i}
-                  src={getImagePath(src)}
-                  className=" h-10 sm:h-12 md:h-14 lg:h-16 opacity-90 hover:opacity-100 transition-all  rounded-xl"
-                  alt="Akreditasyon"
-                />
-              ))}
+              {["/accreditations/kktc.png", "/accreditations/kbudek.png"].map(
+                (src, i) => (
+                  <img
+                    key={i}
+                    src={getImagePath(src)}
+                    className=" h-10 sm:h-12 md:h-14 lg:h-16 opacity-90 hover:opacity-100 transition-all  rounded-xl"
+                    alt="Akreditasyon"
+                  />
+                ),
+              )}
             </div>
           </div>
         </div>

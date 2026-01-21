@@ -85,7 +85,7 @@ export default function Appointment() {
                 <div>
                   <div className="font-medium text-foreground">Saat Seçin</div>
                   <div className="text-muted-foreground text-sm">
-                    07:00 - 23:00 arası
+                    Pzt-Cuma: 08:00-18:00, Cmt: 08:00-13:00
                   </div>
                 </div>
               </div>

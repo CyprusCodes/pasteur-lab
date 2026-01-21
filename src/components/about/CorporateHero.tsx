@@ -72,20 +72,18 @@ export const CorporateHero = () => (
             Akredite Kalite Standartları
           </p>
           <div className="flex items-center justify-center gap-8 md:gap-12 flex-wrap">
-            {[
-              "/accreditations/kktc.png",
-              "/accreditations/kbudek.png",
-              "/accreditations/etik-hastanesi.png",
-            ].map((src, i) => (
-              <div key={i} className="relative group">
-                <div className="absolute inset-0 bg-white/10 rounded-2xl blur-xl group-hover:bg-white/20 transition-all" />
-                <img
-                  src={getImagePath(src)}
-                  className="relative h-12 md:h-16 lg:h-20 opacity-90 hover:opacity-100 transition-all group-hover:scale-110 rounded-xl"
-                  alt="Akreditasyon"
-                />
-              </div>
-            ))}
+            {["/accreditations/kktc.png", "/accreditations/kbudek.png"].map(
+              (src, i) => (
+                <div key={i} className="relative group">
+                  <div className="absolute inset-0 bg-white/10 rounded-2xl blur-xl group-hover:bg-white/20 transition-all" />
+                  <img
+                    src={getImagePath(src)}
+                    className="relative h-12 md:h-16 lg:h-20 opacity-90 hover:opacity-100 transition-all group-hover:scale-110 rounded-xl"
+                    alt="Akreditasyon"
+                  />
+                </div>
+              ),
+            )}
           </div>
         </div>
       </div>

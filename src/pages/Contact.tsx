@@ -11,13 +11,13 @@ const contactInfo = [
   {
     icon: Clock,
     label: "Çalışma Saatleri",
-    value: "7/24",
+    value: "Pzt-Cuma: 08:00-18:00, Cmt: 08:00-13:00, Pazar: Kapalı",
     href: "#",
   },
   {
     icon: Phone,
     label: "Telefon No:",
-    value: "+90 533 871 20 42",
+    value: "+90 533 883 43 34",
     href: "tel:+905338712042",
   },
   {

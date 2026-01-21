@@ -66,7 +66,7 @@ export function Footer() {
                 className="flex items-center gap-3 text-white/80 hover:text-primary transition-colors"
               >
                 <Phone className="w-5 h-5 flex-shrink-0" />
-                <span>+90 533 871 20 42</span>
+                <span>+90 533 883 43 34</span>
               </a>
               <a
                 href="mailto:info@kibrispasteurlab.com"
@@ -84,7 +84,9 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3 text-white/80">
                 <Clock className="w-5 h-5 flex-shrink-0" />
-                <span>7/24</span>
+                <span>
+                  Pzt-Cuma: 08:00-18:00, Cmt: 08:00-13:00, Pazar: Kapalı
+                </span>
               </div>
             </div>
           </div>

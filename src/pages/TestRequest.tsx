@@ -200,7 +200,7 @@ export default function TestRequest() {
                     </h4>
                     <p className="text-red-700 text-sm">
                       Test isteğiniz gönderilemedi. Lütfen daha sonra tekrar
-                      deneyin veya +90 533 871 20 42 numaralı telefonu arayın.
+                      deneyin veya +90 533 883 43 34 numaralı telefonu arayın.
                     </p>
                   </div>
                 </div>

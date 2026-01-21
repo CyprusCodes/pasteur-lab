@@ -193,7 +193,7 @@ export function ServiceContactForm({
                   <div className="space-y-3">
                     <div className="flex items-center gap-2">
                       <Phone className="w-4 h-4 text-primary" />
-                      <span>+90 533 871 20 42</span>
+                      <span>+90 533 883 43 34</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Mail className="w-4 h-4 text-primary" />
@@ -207,7 +207,7 @@ export function ServiceContactForm({
                     </div>
                     <div className="flex items-center gap-2">
                       <Clock className="w-4 h-4 text-primary" />
-                      <span>Pzt - Cmt: 07:00 - 23:00</span>
+                      <span>Pzt-Cuma: 08:00-18:00, Cmt: 08:00-13:00, Pazar: Kapalı</span>
                     </div>
                   </div>
                 </div>

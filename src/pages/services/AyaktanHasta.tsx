@@ -110,7 +110,9 @@ export default function AyaktanHasta() {
                     <h4 className="text-lg font-semibold">Mesai Saatleri</h4>
                   </div>
                   <p className="text-muted-foreground">
-                    Pazartesi - Pazar: 07:00 - 23:00
+                    Pazartesi - Cuma: 08:00 - 18:00
+                    <br />
+                    Cumartesi: 08:00 - 13:00
                     <br />
                     Pazar: Kapalı
                   </p>
