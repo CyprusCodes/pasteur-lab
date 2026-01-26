@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url><loc>https://kibrispasteurlab.com/</loc></url>
+
+  <!-- About -->
+  <url><loc>https://kibrispasteurlab.com/hakkimizda</loc></url>
+  <url><loc>https://kibrispasteurlab.com/hakkimizda/kurumsal</loc></url>
+  <url><loc>https://kibrispasteurlab.com/hakkimizda/zaman-tuneli</loc></url>
+  <url><loc>https://kibrispasteurlab.com/hakkimizda/ekibimiz</loc></url>
+  <url><loc>https://kibrispasteurlab.com/kariyer</loc></url>
+
+  <!-- Services -->
+  <url><loc>https://kibrispasteurlab.com/hizmetlerimiz</loc></url>
+  <url><loc>https://kibrispasteurlab.com/hizmetlerimiz/ayaktan-hasta</loc></url>
+  <url><loc>https://kibrispasteurlab.com/hizmetlerimiz/evde-kan-alma</loc></url>
+  <url><loc>https://kibrispasteurlab.com/hizmetlerimiz/genetik-testler</loc></url>
+  <url><loc>https://kibrispasteurlab.com/hizmetlerimiz/sma-testi</loc></url>
+  <url><loc>https://kibrispasteurlab.com/hizmetlerimiz/kurumsal</loc></url>
+  <url><loc>https://kibrispasteurlab.com/hizmetlerimiz/covid-testleri</loc></url>
+
+  <!-- Test Panels -->
+  <url><loc>https://kibrispasteurlab.com/test-panelleri</loc></url>
+  <url><loc>https://kibrispasteurlab.com/test-panelleri/tiroid</loc></url>
+  <url><loc>https://kibrispasteurlab.com/test-panelleri/torch</loc></url>
+  <url><loc>https://kibrispasteurlab.com/test-panelleri/kolon-kanseri</loc></url>
+  <url><loc>https://kibrispasteurlab.com/test-panelleri/anemi</loc></url>
+  <url><loc>https://kibrispasteurlab.com/test-panelleri/colyak</loc></url>
+  <url><loc>https://kibrispasteurlab.com/test-panelleri/diyabet</loc></url>
+  <url><loc>https://kibrispasteurlab.com/test-panelleri/romatoloji</loc></url>
+  <url><loc>https://kibrispasteurlab.com/test-panelleri/cinsel-hastaliklar</loc></url>
+
+  <!-- Check-up -->
+  <url><loc>https://kibrispasteurlab.com/paketler</loc></url>
+  <url><loc>https://kibrispasteurlab.com/paketler/sporcu-paketi</loc></url>
+
+  <!-- Blog (listing only, posts are dynamic) -->
+  <url><loc>https://kibrispasteurlab.com/blog</loc></url>
+
+  <!-- Contact & Forms -->
+  <url><loc>https://kibrispasteurlab.com/iletisim</loc></url>
+  <url><loc>https://kibrispasteurlab.com/randevu</loc></url>
+  <url><loc>https://kibrispasteurlab.com/test-istem-formu</loc></url>
+
+</urlset>
