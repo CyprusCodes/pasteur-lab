@@ -18,7 +18,7 @@ const contactInfo = [
     icon: Phone,
     label: "Telefon No:",
     value: "+90 533 883 43 34",
-    href: "tel:+905338712042",
+    href: "tel:+905338834334",
   },
   {
     icon: MapPin,
@@ -129,7 +129,7 @@ export default function Contact() {
                 asChild
               >
                 <a
-                  href="https://wa.me/905338712042"
+                  href="https://wa.me/905338834334"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

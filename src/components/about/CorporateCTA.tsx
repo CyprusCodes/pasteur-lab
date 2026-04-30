@@ -103,7 +103,7 @@ export const CorporateCTA = () => (
             asChild
           >
             <a
-              href="tel:+905338712042"
+              href="tel:+905338834334"
               className="inline-flex items-center gap-3"
             >
               <Phone className="w-6 h-6 group-hover:scale-110 transition-transform" />

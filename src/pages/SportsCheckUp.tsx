@@ -167,7 +167,7 @@ export default function SportsCheckUp() {
 
                 <Button size="lg" variant="outline" asChild>
                   <a
-                    href="tel:+905338712042"
+                    href="tel:+905338834334"
                     className="inline-flex items-center gap-2"
                   >
                     Bilgi Al
@@ -347,7 +347,7 @@ export default function SportsCheckUp() {
               className="border-2 border-white text-white hover:bg-white/10 font-bold h-16 px-10 rounded-2xl"
               asChild
             >
-              <a href="tel:+905338712042">Detaylı Bilgi Al</a>
+              <a href="tel:+905338834334">Detaylı Bilgi Al</a>
             </Button>
           </div>
         </div>

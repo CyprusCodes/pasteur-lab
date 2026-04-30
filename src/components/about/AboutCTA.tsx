@@ -79,7 +79,7 @@ export const AboutCTA = () => (
               asChild
             >
               <a
-                href="tel:+905338712042"
+                href="tel:+905338834334"
                 className="inline-flex items-center gap-3"
               >
                 <Phone className="w-5 h-5 group-hover:scale-110 transition-transform" />
